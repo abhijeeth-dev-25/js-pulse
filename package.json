@@ -1,8 +1,9 @@
 {
-  "name": "dsa-visualizer",
-  "displayName": "DSA Visualizer",
-  "description": "Visualizes Data Structures and Algorithms with live flowcharts — see linked lists, trees, and graphs come alive as your code runs",
-  "version": "1.0.0",
+  "name": "js-pulse",
+  "displayName": "JS Pulse",
+  "description": "Visualizes Data Structures and Algorithms with live flowcharts — see linked lists, trees, and graphs come alive as your JavaScript code runs",
+  "version": "1.1.0",
+  "icon": "icon.png",
   "publisher": "abhijeeth-dev-25",
   "repository": {
     "type": "git",
@@ -10,6 +11,7 @@
   },
   "license": "MIT",
   "keywords": [
+    "javascript",
     "dsa",
     "data structures",
     "visualizer",
