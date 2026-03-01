@@ -1,0 +1,84 @@
+{
+  "name": "dsa-visualizer",
+  "displayName": "DSA Visualizer",
+  "description": "Visualizes Data Structures and Algorithms with live flowcharts — see linked lists, trees, and graphs come alive as your code runs",
+  "version": "1.0.0",
+  "publisher": "abhijeeth-dev-25",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhijeeth-dev-25/js-extension"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsa",
+    "data structures",
+    "visualizer",
+    "linked list",
+    "tree",
+    "graph",
+    "flowchart"
+  ],
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Education",
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dsa-visualizer.run",
+        "title": "Run & Visualize DSA",
+        "icon": "$(play)"
+      },
+      {
+        "command": "dsa-visualizer.start",
+        "title": "Visualize DSA (Static)"
+      },
+      {
+        "command": "dsa-visualizer.startLive",
+        "title": "Visualize DSA (Live Terminal)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "dsa-visualizer.run",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
+        "when": "editorTextFocus && editorLangId == javascript"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__traverse": "^7.28.0",
+    "@types/vscode": "^1.80.0",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.29.1",
+    "@babel/parser": "^7.29.0",
+    "@babel/traverse": "^7.29.0",
+    "@babel/types": "^7.29.0",
+    "uuid": "^13.0.0"
+  }
+}
