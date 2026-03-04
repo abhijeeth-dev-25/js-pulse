@@ -1,4 +1,4 @@
-# DSA Visualizer 🔗📊
+# JS Pulse 🔗📊
 
 A VS Code extension that **visualizes data structures in real-time** as your JavaScript code runs. See linked lists, trees, graphs, and other data structures come alive right inside VS Code.
 
