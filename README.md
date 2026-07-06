@@ -84,4 +84,4 @@ Webview Frontend (React + React Flow)
 
 ## 📄 License
 
-
+MIT
